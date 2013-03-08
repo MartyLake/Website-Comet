@@ -1,0 +1,454 @@
+/* Left & Right alignment */
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.wrapper {
+	width:100%;
+	overflow:hidden;
+	position:relative;
+}
+/* Global properties ======================================================== */
+body, html{
+	min-width:970px;
+	min-height:800px;
+}
+body {
+	position:relative;
+	overflow:hidden;
+	border:0;
+	font:14px/24px  Georgia, sans-serif;
+	color:#5e7b8d;
+	background: url('../images/bg_pattern.png');
+	height:100%;
+}
+/* Global Structure ============================================================= */
+.main {
+	position:relative;
+	width:940px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+.page_spinner {
+	position:fixed;
+	background: url(../images/main_spinner.gif) 50% 50% no-repeat #132e41;
+	z-index:99;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0
+}
+/* ============================= main layout ====================== */
+a {
+	color:#306d92;
+	text-decoration: none;
+	outline:none;
+}
+a:hover {
+	color:#fff;
+}
+h4 a {
+	color:#fff;
+	text-decoration: none;
+	outline:none;
+}
+h4 a:hover {
+	color:#306d92;
+}
+h1 {
+	display:inline-block;
+	padding:0;
+}
+h2 {
+	font: 35px 'Bitter', sans-serif;
+	color: #fff;
+	text-transform:uppercase;
+	padding-bottom:26px;
+}
+#page_about h2 {
+	padding-bottom:32px;
+}
+h3 {
+	font: 24px 'Bitter', sans-serif;
+	color: #fff;
+	text-transform:uppercase;
+	padding-bottom:2px;
+}
+h4 {
+	font: 16px/24px 'Georgia', sans-serif;
+	color: #fff;
+	text-transform:uppercase;
+	padding-bottom:10px;
+}
+#page_about h4 {
+	padding-bottom:1px;
+}
+p { 
+	padding-bottom:14px;
+}
+img { 
+	padding-bottom:21px;
+}
+.bold{
+	font-weight:bold;
+}
+/* ============================= header ====================== */
+header{
+	height:120px;
+	text-transform:uppercase;
+	margin-bottom:54px;
+}
+header > div {
+	display:inline-block;
+}
+#logo {
+	margin:30px 0 26px 0;
+	position:relative;
+	display:block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width:199px;
+	height:68px;
+	left:-257px;
+	background:url(../images/logo.png) 0 0 no-repeat;
+	z-index:5;
+}
+#logo_splash {
+	margin:30px 0 26px 0;
+	position:relative;
+	display:block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width:543px;
+	height:167px;
+	background:url(../images/logo_splash.png) 0 0 no-repeat;
+	z-index:5;
+}
+/* ============================= menu ====================== */
+.menu {
+	padding:0;
+}
+#menu{
+	height:118px;
+	border-top:1px solid #2c698e;
+	border-bottom:1px solid #0c1f2a;
+	border-left:1px ridge #1f4c66;
+	border-right:1px ridge #1d455e;
+}
+#menu > li {
+	position:relative;
+	float:left;
+	width:188px;
+	background:url(../images/menu_line.png) right 0 no-repeat;
+}
+#menu > li.last {
+	width:186px;
+	background:none;
+}
+#menu > li > a{
+	position:relative;
+	display:block;
+	width:186px;
+	height:118px;
+	font: 20px/118px 'Bitter', sans-serif;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	z-index:1;
+	background:url(../images/menu_item_bg.png) 0 0 repeat-x;
+}
+#menu > li > a span{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background:url(../images/menu_item_hover.png) 0 0 repeat-x;
+	z-index:-1;
+}
+.submenu_1 {
+	position:absolute;
+	top:-124px;
+	left:0;
+	width:187px;
+	background:#15354a;
+	padding:20px 0;
+	z-index: 5;
+}
+.submenu_1 li {	
+	position:relative;
+	text-align:center;
+}
+.submenu_1 a {
+	position:relative;
+	display:block;
+	padding:7px 0 !important;
+	color: #fff !important;
+	font: 20px 'Georgia', sans-serif;
+	font-size:11px;
+	text-decoration:none;
+	z-index:1;
+}
+.submenu_1 a b{
+	position:absolute;
+	width:100%;
+	height:29px;
+	top:0;
+	left:0;
+	background:url(../images/submenu_hover.png) 0 0 repeat-x;
+	z-index:-1;
+}
+/* ============================= bgGall ======================= */
+#bgStretch img{
+	background:#000;
+}
+/* ============================= splash ====================== */
+#splash{
+	position:absolute;
+	width:100%;
+	z-index:10;
+	margin-top:130px;
+	top:400px;
+}
+/* ============================= content ====================== */
+#content{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+#content > ul > li {
+	position:absolute;
+	width:100%;
+	background-color:#091720;
+}
+#content > ul > li > div{
+	overflow:hidden;
+	padding:53px 0 34px 60px;
+}
+a{
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+.more{
+	margin-top:-10px;
+	margin-left:-10px;
+	display:inline-block;
+	padding:10px;
+	font: 20px 'Bitter', sans-serif;
+	text-align:center;
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.moreBig:hover, .more:hover{
+	color:#42abf1;
+	background:#fff;
+}
+.google_map{
+   width: 340px;
+   height: 276px;
+   background: #fff;
+}
+.address {
+	margin-top:-5px;
+}
+.address > span{
+	display:inline-block;
+	width:200px;
+}
+.mailLink{
+	text-decoration:none;
+}
+/* ============================= footer ====================== */
+footer{
+	width:100%;
+	
+	color:#306d92;
+	text-transform:uppercase;
+}
+footer > a{
+	color:#306d92;
+	text-decoration:none;
+}
+footer > a:hover{
+	color:#fff;
+}
+/*----*/
+.follow-icon {
+	float: right;
+	margin-top: -7px;
+	left: 0;
+	position: relative;
+}
+.follow-icon li {
+	float: left;
+	margin-left: 7px;
+}
+.follow-icon .img_act {
+	position: absolute;
+}
+/*----*/
+.bottom_bg{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:207px;
+	background: url('../images/bottom_bg.png');
+	border-top:1px solid #193b50;
+	z-index:-1;
+}
+/* ============================= forms ============================= */
+#form1 {
+	margin-top:4px;
+}
+#form1 input {
+	margin:0;
+	background-color:#fff;
+	padding:9px 0 9px 11px;
+	width:209px;
+	box-shadow:none;
+}
+#form1 textarea {
+	resize: none;
+	margin:0;
+	background-color:#fff;
+	padding:9px 0 9px 11px;
+	width:405px;
+	height:129px;
+	overflow:auto;
+	line-height:18px;
+}
+#form1 label {
+	position:relative;
+	display:inline-block;
+	min-height:44px;
+}
+#form1 .error, #form1 .empty {
+	position:relative;
+	top: -3px;
+	display:none;
+	font-size:10px;
+	line-height:18px;
+	color:#fff;
+	text-transform:none;
+}
+.btns{
+	margin-right:-7px;
+}
+.btns a{
+	margin:4px 0 0 0;
+}
+/* Form defaults */
+input, select, textarea {
+	font:14px Georgia, sans-serif;
+	color: #306d92;
+}
+/* start close */
+.close_main a {
+	color:#fff;
+}
+.close_main a:hover {
+	color:#3bbde1;
+}
+.close_main{
+	position: absolute;
+	top: 64px;
+	right: -2px;
+	font: 24px 'Bitter', sans-serif;
+	color: #fff;
+	text-transform:uppercase;
+}
+.close{
+	float:left;
+	margin-right:6px;
+	margin-top:4px;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	background: url('../images/close_sign.png') right bottom no-repeat;
+	z-index:103;
+	right:-157px;
+}
+/* end close */
+.remark{
+	position:relative;
+	width:190px;
+	margin-bottom:30px;
+	padding:25px 20px 14px 72px;
+	background:#0d202c;
+}
+.remark > span{
+	position:absolute;
+	width:40px;
+	height:20px;
+	bottom:-20px;
+	left:35px;
+	background:url(../images/arrow1.png) 0 0 no-repeat;
+}
+.remark > .quote{
+	position:absolute;
+	width:31px;
+	height:25px;
+	top:28px;
+	left:22px;
+	background:url(../images/quote.png) 0 0 no-repeat;
+}
+/* start scroll */
+.scroll_btn_up, .scroll_btn_down{
+	position: absolute;
+	display:inline-block;
+	width:21px;
+	height:14px;
+	overflow: hidden;
+	right:116px;
+}
+.scroll_btn_down{
+	background:url(../images/scroll_btn_up.png) no-repeat;
+	top:123px;
+}
+.scroll_btn_up{
+	background:url(../images/scroll_btn_down.png) no-repeat;
+	top:378px;
+}
+.scroll {
+	height:275px;
+	margin-top:5px;
+}
+._track {
+	position:relative;
+	width:15px;
+	height:210px;
+	right:119px;
+	top:154px;
+}
+._shuttle {
+	cursor:pointer;
+	width:16px;
+	height:48px;
+	background:url(../images/shuttle.png);
+}
+#page_clients ._track{
+	right:383px;
+}
+#page_clients .scroll_btn_down, #page_clients .scroll_btn_up{
+	right:380px;
+}
+#page_privacy ._track{
+	right:59px;
+}
+#page_privacy .scroll_btn_down, #page_privacy .scroll_btn_up{
+	right:56px;
+}
+#page_more ._track{
+	right:59px;
+}
+#page_more .scroll_btn_down, #page_more .scroll_btn_up{
+	right:56px;
+}
+/* end scroll */
